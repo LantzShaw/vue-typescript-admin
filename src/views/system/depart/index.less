@@ -1,0 +1,105 @@
+//noinspection LessUnresolvedVariable
+@prefix-cls: ~'@{namespace}-depart-manage';
+
+@border-color: #3d4a65;
+
+// @prefix-cls: ~'@{namespace}-basic-table';
+
+[data-theme='dark'] {
+  .ant-table-tbody > tr:hover.ant-table-row-selected > td,
+  .ant-table-tbody > tr.ant-table-row-selected td {
+    background-color: #262626;
+  }
+
+  // 表格选择工具栏样式
+  .alert {
+    background-color: #24324f;
+    border-color: @border-color;
+  }
+
+  .@{prefix-cls} {
+    &--box {
+      .ant-tabs-bar {
+        // padding: 0 20px;
+        margin: 0;
+        background-color: #2c3b5b;
+      }
+
+      .ant-tabs-tabpane {
+        background-color: #2c3b5b;
+      }
+
+      .j-box-bottom-button-float {
+        border-top: 1px solid @border-color;
+        background-color: #2c3b5b;
+      }
+    }
+  }
+}
+
+.@{prefix-cls} {
+  &--box {
+    .ant-tabs-bar {
+      margin: 0;
+      background-color: #fff;
+    }
+
+    .ant-tabs-tabpane {
+      background-color: #fff;
+    }
+
+    .j-box-bottom-button-float {
+      border-top: 1px solid #e8e8e8;
+      background-color: #fff;
+    }
+  }
+}
+
+// @prefix-cls: ~'@{namespace}-depart-manage';
+
+// .@{prefix-cls} {
+//   &--tree-search {
+//     width: 100%;
+//     margin: 10px 0 20px;
+//   }
+
+//   &--base-info-form {
+//     @media (min-width: 576px) {
+//       .no-border {
+//         border: 0;
+//         box-shadow: none;
+//       }
+
+//       .ant-select.ant-select-disabled {
+//         .ant-select-selector {
+//           border: 0;
+//           color: black;
+//           background-color: transparent;
+//         }
+
+//         .ant-select-selector,
+//         .ant-select-selection-item {
+//           cursor: text !important;
+//           user-select: initial !important;
+//         }
+
+//         .ant-select-selection-search,
+//         .ant-select-arrow {
+//           display: none;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // 夜间模式样式兼容
+// [data-theme='dark'] .@{prefix-cls} {
+//   &--base-info-form {
+//     .ant-select.ant-select-disabled {
+//       .ant-select-selector {
+//         color: #c9d1d9;
+//         background-color: transparent;
+//       }
+//     }
+//   }
+// }
