@@ -1,3 +1,4 @@
+// 颜色
 export const modifyVars = {
   hack: 'true;@import "/Users/Lantz/Documents/work/jeecgboot-vue3/node_modules/ant-design-vue/lib/style/color/colorPalette.less";',
   'blue-base': '#1890ff',
