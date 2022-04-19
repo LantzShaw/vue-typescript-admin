@@ -7,13 +7,13 @@
       <a-menu :selectedKeys="selectedKeys">
         <template v-for="item in dropMenuList" :key="`${item.event}`">
           <a-menu-item
-                  v-bind="getAttr(item.event)"
-                  @click="handleClickMenu(item)"
-                  :disabled="item.disabled"
+            v-bind="getAttr(item.event)"
+            @click="handleClickMenu(item)"
+            :disabled="item.disabled"
           >
             <a-popconfirm
-                    v-if="popconfirm && item.popConfirm"
-                    v-bind="getPopConfirmAttrs(item.popConfirm)"
+              v-if="popconfirm && item.popConfirm"
+              v-bind="getPopConfirmAttrs(item.popConfirm)"
             >
               <template #icon v-if="item.popConfirm.icon">
                 <Icon :icon="item.popConfirm.icon" />
