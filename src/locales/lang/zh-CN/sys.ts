@@ -21,7 +21,7 @@ export default {
     errMsg504: '网络超时!',
     errMsg505: 'http版本不支持该请求!',
 
-    registerMsg:'注册成功',
+    registerMsg: '注册成功',
   },
   app: { logoutTip: '温馨提醒', logoutMessage: '是否确认退出系统?', menuLoading: '菜单加载中...' },
   errorLog: {
@@ -67,8 +67,8 @@ export default {
     signUpFormTitle: '注册',
     forgetFormTitle: '重置密码',
 
-    signInTitle: 'Jeecg Boot',
-    signInDesc: '是中国最具影响力的 企业级 低代码平台！',
+    signInTitle: 'Admin Pro',
+    signInDesc: '基于JeecgBoot的企业级管理平台',
     policy: '我同意xxx隐私政策',
     scanSign: `扫码后，即可完成登录`,
     scanSuccess: `扫码成功，登录中`,
@@ -100,6 +100,6 @@ export default {
     smsCode: '短信验证码',
     mobile: '手机号码',
 
-    subTitleText:'{0}秒后返回登录页面',
+    subTitleText: '{0}秒后返回登录页面',
   },
 };

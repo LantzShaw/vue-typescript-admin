@@ -52,6 +52,8 @@
 
       <UserDropDown :theme="getHeaderTheme" />
 
+      <AppDarkModeToggle v-if="!getShowSetting" class="mr-2" />
+
       <SettingDrawer v-if="getShowSetting" :class="`${prefixCls}-action__item`" />
     </div>
   </Header>
@@ -67,7 +69,7 @@
   import LayoutMenu from '../menu/index.vue';
   import LayoutTrigger from '../trigger/index.vue';
 
-  import { AppSearch } from '/@/components/Application';
+  import { AppSearch, AppDarkModeToggle } from '/@/components/Application';
 
   import { useHeaderSetting } from '/@/hooks/setting/useHeaderSetting';
   import { useMenuSetting } from '/@/hooks/setting/useMenuSetting';
@@ -109,6 +111,7 @@
       FullScreen,
       Notify,
       AppSearch,
+      AppDarkModeToggle,
       ErrorAction,
       LockScreen,
       LoginSelect,
